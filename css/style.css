@@ -1,0 +1,314 @@
+html {
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "AvenirNext", "Lato", "Hirago KakuGothic ProN", Meiryo, sans-serif;
+  font-size: 1.8rem; /* デフォルトのフォントサイズを16pxに */
+}
+
+/* 全体共通系 */
+a {
+  text-decoration: none;
+}
+
+ul {
+  list-style-type: none;
+}
+
+/* PC限定はPC時は表示 */
+.pc-only {
+  display: block;
+}
+
+/* スマホ限定はPC時は非表示 */
+.sp-only {
+  display: none;
+}
+
+/* テキスト共通系 */
+.text-black {
+  color: #183C60;
+}
+
+/* 少し薄い文字 */
+.normal-text {
+  color: #6B7C92;
+}
+
+.headline {
+  font-size: 3.4rem;
+}
+
+/* PCでの表示では2.8rem */
+.text-size-lg {
+  font-size: 2.8rem;
+}
+
+/* 文字の中央寄せ */
+.text-center {
+  text-align:center;
+}
+
+/* 緑色のテキスト */
+.text-green {
+  color: #1BC8B7;
+}
+
+
+/* 装飾共通系(ボタン) */
+.btn {
+  padding: 1rem 2rem;
+  border-radius: 2rem;
+  display: inline-block;
+  font-size: 0.75rem;
+}
+
+.btn-orange {
+  background: #FDB757;
+  color: #fff;
+}
+
+/* ヘッダー部分のスタイル */
+.header-wrapper {
+  padding-top: 10px;
+  background: #F4FAFA;
+}
+
+.header {
+  width: 90%;
+  margin: 0 auto; /* 中央寄せ */
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header-logo {
+  width: 200px;
+}
+
+.header-logo img {
+  max-width: 100%;
+}
+
+.header-menu {
+  display: flex;
+  align-items: center;
+}
+
+.header-menu li {
+  margin: 0 1rem;
+}
+
+/* 法人プランは左側のボーダー表示 */
+.company-plan {
+  border-left: 1px solid #D7DDDF;
+  padding-left: 1rem;
+}
+
+/*.`キービジュアル部分 */
+.key-visual {
+  display: flex;
+  background: #F4FAFA;
+}
+
+.key-visual-text, .key-visual-image {
+  width: 50%;
+}
+
+.key-visual-text {
+  padding: 0 50px;
+}
+
+.key-visual-image img {
+  max-width: 100%;
+}
+
+/* サービスの利用状況説明部分 */
+.service-info {
+  /* 上下に100pxずつ余白をつける */
+  padding: 100px 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.service-info > div {
+  display: flex;
+  /* 画像とテキストを縦方向に中央に寄せる */
+  align-items: center;
+  width: 33.3333%;
+}
+
+/* 画像とテキストは親要素に対して半分ずつ表示する */
+.service-info-image, .service-info-text {
+  width: 50%;
+}
+
+.service-info-image {
+  text-align: center;
+}
+
+.service-info-image img {
+  max-width: 50%;
+}
+
+/* 人、回、カ国の文字は小さく表示する */
+.service-info-text span {
+  font-size: 0.5em;
+}
+
+/** サービスの詳細 **/
+.service-detail {
+  /* 薄緑の背景色をつける */
+  background: #F4FAFA;
+}
+
+/* サービスの詳細配下の画像とテキストは横並び表示 */
+.service-detail > div {
+  display: flex;
+  align-items: center;
+}
+
+/* 偶数番目の要素だけ画像とテキストを順番反転 */
+.service-detail > div:nth-child(even) {
+  flex-direction: row-reverse;
+}
+
+/* 画像とテキストは50%ずつ */
+.service-detail-image, .service-detail-text {
+  width: 50%;
+}
+
+.service-detail-image img {
+  max-width: 100%;
+}
+
+/* 見出しの下の下線 */
+.headline-border {
+  height: 5px; /* 線の太さ */
+  width: 40px; /* 線の長さ */
+  background: #1BC8B7; /* 線の色 */
+  margin-top: -15px;   /* 少し上へ */
+}
+
+/* レッスンへのこだわり */
+.lesson-feature {
+  padding: 100px 0;
+}
+
+.lesson-feature-wrapper {
+  display: flex;
+}
+
+.lesson-feature-wrapper > div {
+  width: 50%;
+}
+
+/* スマホ用の表示 */
+@media screen and (max-width: 559px) {
+  /* テキスト共通系 */
+  body {
+    font-size: 1.6rem; /* デフォルトのフォントサイズを16pxに */
+  }
+  .headline {
+    font-size: 2.4rem;
+  }
+
+  /* スマホでの表示では2.4rem */
+  .text-size-lg {
+    font-size: 2.4rem;
+  }
+
+  /* スマホでは非表示 */
+  .hidden-sm {
+    display: none;
+  }
+
+  /* PC限定はスマホ時は非表示 */
+  .pc-only {
+    display: none;
+  }
+
+  /* スマホ限定はスマホ時は非表示 */
+  .sp-only {
+    display: block;
+  }
+
+  /* ヘッダー */
+  .header-logo {
+    width: 50px;
+  }
+
+  /* キービジュアル */
+  .key-visual {
+    flex-direction: column;
+  }
+
+  .key-visual-text {
+    width: calc(100% - 6rem);
+    padding: 0 3rem;
+  }
+
+  .key-visual-image {
+    width: 100%;
+  }
+
+  .service-info {
+    flex-direction: column;
+  }
+
+  .service-info > div {
+    /* スマホの時は横幅いっぱいに表示 */
+    width: 100%;
+  }
+
+  /* サービス詳細 */
+  .service-detail > div {
+    /* そのままだと、偶数番目がPC時のrow-reverseが参照されるので、上書き */
+    flex-direction: column !important;
+  }
+
+  /* 画像とテキストは100%ずつの表示に切り替え */
+  .service-detail-image, .service-detail-text {
+    width: 100%
+  }
+
+  /* スマホの時はテキストを最初に表示して、画像を2番目に表示する */
+  .service-detail-text {
+    order: 1;
+  }
+  .service-detail-image {
+    order : 2;
+  }
+
+  /* レッスンへのこだわり */
+  .lesson-feature-wrapper {
+    flex-direction: column;
+  }
+
+  .lesson-feature-wrapper > div {
+    width: 100%;
+  }
+}
+
+/* タブレット用の表示 */
+@media screen and (min-width: 560px) and (max-width: 960px) {
+  /* テキスト共通系 */
+  .headline {
+    font-size: calc(2.4rem + ((1vw - 0.56rem) * 2.5));
+  }
+
+  /* ヘッダー */
+  .header-logo {
+    width: calc(13rem + ((1vw - 0.56rem) * 17.5));
+  }
+
+  /* タブレットでは2.0rem ~ 2.8rem */
+  .text-size-lg {
+    font-size: calc(2rem + ((1vw - 0.56rem) * 2));
+  }
+}
