@@ -228,6 +228,10 @@ ul {
 
 .cource-detail img {
   border-radius: 50%;
+
+  /* 大型サイズのPCで見た時にデザインが崩れるのを防止 */
+  display: block;
+  margin: 0 auto;
 }
 
 .btn-shadow {
