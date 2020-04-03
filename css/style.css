@@ -208,6 +208,64 @@ ul {
   width: 50%;
 }
 
+/* 全てのコース */
+.all-couces {
+  background: #F4FAFA;
+  padding: 100px 0;
+}
+.cources {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.cource-detail {
+  width: calc(25% - 40px);
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(106,137,152,0.2);
+  margin: 10px 20px;
+}
+
+.cource-detail img {
+  border-radius: 50%;
+}
+
+.btn-shadow {
+  display: inline-block;
+  font-weight: bold;
+  font-size: 1.4rem;
+  padding: 10px 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 15px 1px rgba(133,140,142,0.3);
+  color: #fff;
+}
+
+.btn-shadow-green {
+  background:#4ccfc9;
+}
+
+.btn-shadow-blue {
+  background:#A1C3F5;
+}
+
+.btn-shadow-yellow {
+  background: #E4DF54;
+}
+
+.btn-shadow-red {
+  background: #FE7F8C;
+}
+
+.btn-shadow-pink {
+  background: #FE8DB2;
+}
+
+.btn-shadow-purple {
+  background: #C6BAE8;
+}
+
+
+
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
   /* テキスト共通系 */
@@ -293,6 +351,11 @@ ul {
   .lesson-feature-wrapper > div {
     width: 100%;
   }
+
+  /* スマホの時は2枚表示 */
+  .cource-detail {
+    width: calc(50% - 40px);
+  }
 }
 
 /* タブレット用の表示 */
@@ -310,5 +373,10 @@ ul {
   /* タブレットでは2.0rem ~ 2.8rem */
   .text-size-lg {
     font-size: calc(2rem + ((1vw - 0.56rem) * 2));
+  }
+
+  /* タブレットの時は3枚表示 */
+  .cource-detail {
+    width: calc(33.3333% - 40px);
   }
 }
