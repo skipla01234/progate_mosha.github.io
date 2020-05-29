@@ -16,6 +16,7 @@ a {
 
 ul {
   list-style-type: none;
+  padding: 0;
 }
 
 /* PC限定はPC時は表示 */
@@ -69,6 +70,16 @@ ul {
 .btn-orange {
   background: #FDB757;
   color: #fff;
+}
+
+.btn-square {
+  padding: 10px 20px;
+  display: inline-block;
+}
+
+.btn-green-border {
+  border: 1px solid #59CDC8;
+  color: #59CDC8;
 }
 
 /* ヘッダー部分のスタイル */
@@ -268,6 +279,35 @@ ul {
   background: #C6BAE8;
 }
 
+/* 初心者から創れる人を生み出す */
+.beginner {
+  padding: 100px 0;
+}
+
+/* サクセスストーリー */
+.all-stories {
+  background: #F4FAFA;
+  padding: 100px 0;
+}
+
+/* slickのarrowが無駄に20px取ってるので非表示 */
+.slick-prev, .slick-next {
+  display: none !important;
+}
+
+.story div {
+  text-align: center;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(106,137,152,0.2);
+  margin: 10px 20px;
+}
+
+.story img {
+  max-width: 50%;
+  border-radius: 50%;
+  display: block;
+  margin: 10px auto;
+}
 
 
 /* スマホ用の表示 */

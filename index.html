@@ -4,6 +4,10 @@
   <meta charset="UTF-8">
   <title>Progate模写</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+	<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+  <script type="text/javascript" src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+  <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css">
   <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
@@ -152,6 +156,126 @@
     </div>
   </div>
 
+  <div class="beginner">
+    <h1 class="headline text-green text-center">初心者から、創れる人を生み出す</h1>
+    <p class="normal-text text-center">LEARN TO CODE, LEARN TO BE CREATIVE.</p>
+    <p class="normal-text text-center"><span class="text-green">「初心者」</span>でもわかりやすく、挫折せずに学べること。<br />
+    そして、本物のスキルが身につき<span class="text-green">「創れる」</span>ようになること。</p>
+    <p class="normal-text text-center">プログラミングで夢を叶えたい人が、本当に夢を叶えられるように、<br /> 私たちはこんな思いをProgateに込めています。 </p>
+    <p class="normal-text text-center">プログラミングの世界へ踏み出すあなたを、私たちがサポートします。</p>
+  </div>
+
+  <div class="all-stories">
+    <h1 class="headline text-black text-center">サクセスストーリー</h1>
+    <p class="normal-text text-center">プログラミングの世界への第一歩を踏み出し、夢を実現した方々のサクセスストーリーを紹介します。</p>
+    <ul class="stories">
+      <li class="story">
+        <div>
+          <img src="./img/story_1.jpg" alt="">
+          <p class="normal-text">武田金矢</p>
+          <p class="normal-text">Japan</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_2.jpg" alt="">
+          <p class="normal-text">山本くにお</p>
+          <p class="normal-text">Japan</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_3.jpg" alt="">
+          <p class="normal-text">Jonny K</p>
+          <p class="normal-text">Korea</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_4.jpg" alt="">
+          <p class="normal-text">Nick</p>
+          <p class="normal-text">Singapore</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_5.jpg" alt="">
+          <p class="normal-text">Andree</p>
+          <p class="normal-text">France</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_6.jpg" alt="">
+          <p class="normal-text">Cleto</p>
+          <p class="normal-text">Spain</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_1.jpg" alt="">
+          <p class="normal-text">Marcus</p>
+          <p class="normal-text">America</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+      <li class="story">
+        <div>
+          <img src="./img/story_2.jpg" alt="">
+          <p class="normal-text">Janiya</p>
+          <p class="normal-text">Canada</p>
+          <p>こんなことになるなんて</p>
+          <p class="btn-square btn-green-border">ストーリーを読む</p>
+        </div>
+      </li>
+    </ul>
+  </div>
+
+  <script>
+    $(document).ready(function() {
+      $('.stories').slick({
+        dots: true,
+        slidesToShow: 6,
+        accessibility: true,
+        responsive: [
+          {
+            breakpoint: 960,
+            settings: {
+              slidesToShow: 3,
+              slidesToScroll: 3,
+            }
+          },
+          {
+            breakpoint: 600,
+            settings: {
+              slidesToShow: 2,
+              slidesToScroll: 2
+            }
+          },
+          {
+            breakpoint: 480,
+            settings: {
+              slidesToShow: 1,
+              slidesToScroll: 1
+            }
+          }
+        ]
+      });
+    });
+  </script>
 
 </body>
 </html>
