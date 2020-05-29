@@ -290,7 +290,9 @@ ul {
   padding: 100px 0;
 }
 
-.stories {
+/* slickのarrowが無駄に20px取ってるので非表示 */
+.slick-prev, .slick-next {
+  display: none;
 }
 
 .story div {
