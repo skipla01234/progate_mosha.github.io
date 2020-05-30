@@ -336,6 +336,25 @@ ul {
   color: #fff;
 }
 
+/* いつでもどこでもプログラミング */
+.anywhere {
+  display: flex;
+}
+
+.device-image {
+  /* 上の要素に食い込ませる */
+  margin-top: -60px;
+  width: 30%;
+}
+
+.device-image img {
+  max-width: 100%;
+}
+
+.anywhere-text {
+  width: 70%;
+}
+
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
   /* テキスト共通系 */
