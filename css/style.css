@@ -34,6 +34,7 @@ ul {
   color: #183C60;
 }
 
+
 /* 少し薄い文字 */
 .normal-text {
   color: #6B7C92;
@@ -41,6 +42,10 @@ ul {
 
 .headline {
   font-size: 3.4rem;
+}
+
+.headline-md {
+  font-size: 2.8rem;
 }
 
 /* PCでの表示では2.8rem */
@@ -64,7 +69,16 @@ ul {
   padding: 1rem 2rem;
   border-radius: 2rem;
   display: inline-block;
+}
+
+/* 小さめのボタン */
+.btn-sm {
   font-size: 0.75rem;
+}
+
+/* 大きめのボタン */
+.btn-md {
+  font-size: 1.8rem;
 }
 
 .btn-orange {
@@ -309,6 +323,64 @@ ul {
   margin: 10px auto;
 }
 
+/* 無料会員登録 */
+.start-programing {
+  padding: 100px 0;
+  text-align: center;
+}
+
+.register a {
+  box-shadow: 0 0 15px 1px rgba(33, 47, 51, 0.3);
+}
+
+/* アプリでもProgate */
+.app {
+  background: #29CEC7;
+  padding: 100px 0;
+  color: #fff;
+}
+
+/* いつでもどこでもプログラミング */
+.anywhere {
+  display: flex;
+  align-items: center;
+}
+
+.device-image {
+  /* 上の要素に食い込ませる */
+  margin-top: -60px;
+  width: 30%;
+}
+
+.device-image img {
+  max-width: 100%;
+}
+
+.anywhere-text {
+  width: 70%;
+}
+
+/* google playとapp storeのアイコンを中央寄せ */
+.apps {
+  text-align:center;
+}
+
+/** フッター用デザイン **/
+.footer {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer ul {
+  margin: 0 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6C7D92;
+}
 
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
@@ -318,6 +390,10 @@ ul {
   }
   .headline {
     font-size: 2.4rem;
+  }
+
+  .headline-md {
+    font-size: 2.0rem;
   }
 
   /* スマホでの表示では2.4rem */
@@ -338,6 +414,12 @@ ul {
   /* スマホ限定はスマホ時は非表示 */
   .sp-only {
     display: block;
+  }
+
+
+  /* 大きめのボタン */
+  .btn-md {
+    font-size: .75rem;
   }
 
   /* ヘッダー */
@@ -400,13 +482,35 @@ ul {
   .cource-detail {
     width: calc(50% - 40px);
   }
+
+  .anywhere {
+    flex-direction: column;
+  }
+
+  .anywhere-text, .device-image {
+    width: 100%;
+  }
+
+  /* スマホの時、フッターは縦並びにする */
+  .footer {
+    flex-direction: column;;
+  }
 }
 
 /* タブレット用の表示 */
 @media screen and (min-width: 560px) and (max-width: 960px) {
+  /* 大きめのボタン */
+  .btn-md {
+    font-size: calc(0.75rem + ((1vw - 0.56rem) * 2.625));
+  }
+
   /* テキスト共通系 */
   .headline {
     font-size: calc(2.4rem + ((1vw - 0.56rem) * 2.5));
+  }
+
+  .headline-md {
+    font-size: calc(2rem + ((1vw - 0.56rem) * 2));
   }
 
   /* ヘッダー */
@@ -422,5 +526,11 @@ ul {
   /* タブレットの時は3枚表示 */
   .cource-detail {
     width: calc(33.3333% - 40px);
+  }
+
+  /* スマホの時、フッターは縦並びにする */
+  .footer ul {
+    /* 左右に30pxずつマージン取ってるので、半分にするために60px引く */
+    width: calc(50% - 60px);
   }
 }
