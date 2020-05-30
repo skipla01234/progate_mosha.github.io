@@ -34,6 +34,7 @@ ul {
   color: #183C60;
 }
 
+
 /* 少し薄い文字 */
 .normal-text {
   color: #6B7C92;
@@ -328,6 +329,12 @@ ul {
   box-shadow: 0 0 15px 1px rgba(33, 47, 51, 0.3);
 }
 
+/* アプリでもProgate */
+.app {
+  background: #29CEC7;
+  padding: 100px 0;
+  color: #fff;
+}
 
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
