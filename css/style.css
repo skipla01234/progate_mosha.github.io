@@ -67,6 +67,18 @@ ul {
   font-size: 0.75rem;
 }
 
+/* 大きめのボタン */
+.btn-md {
+  font-size: 1.8rem;
+}
+
+.register a {
+  box-shadow: 0 0 15px 1px rgba(33, 47, 51, 0.3);
+}
+.register {
+  text-align: center;
+}
+
 .btn-orange {
   background: #FDB757;
   color: #fff;
@@ -340,6 +352,12 @@ ul {
     display: block;
   }
 
+
+  /* 大きめのボタン */
+  .btn-md {
+    font-size: .75rem;
+  }
+
   /* ヘッダー */
   .header-logo {
     width: 50px;
@@ -404,6 +422,11 @@ ul {
 
 /* タブレット用の表示 */
 @media screen and (min-width: 560px) and (max-width: 960px) {
+  /* 大きめのボタン */
+  .btn-md {
+    font-size: calc(0.75rem + ((1vw - 0.56rem) * 2.625));
+  }
+
   /* テキスト共通系 */
   .headline {
     font-size: calc(2.4rem + ((1vw - 0.56rem) * 2.5));
