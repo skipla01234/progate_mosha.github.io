@@ -365,6 +365,23 @@ ul {
   text-align:center;
 }
 
+/** フッター用デザイン **/
+.footer {
+  padding: 100px 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.footer ul {
+  margin: 0 30px;
+}
+
+.footer a {
+  text-decoration: none;
+  color: #6C7D92;
+}
+
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
   /* テキスト共通系 */
@@ -473,6 +490,11 @@ ul {
   .anywhere-text, .device-image {
     width: 100%;
   }
+
+  /* スマホの時、フッターは縦並びにする */
+  .footer {
+    flex-direction: column;;
+  }
 }
 
 /* タブレット用の表示 */
@@ -504,5 +526,11 @@ ul {
   /* タブレットの時は3枚表示 */
   .cource-detail {
     width: calc(33.3333% - 40px);
+  }
+
+  /* スマホの時、フッターは縦並びにする */
+  .footer ul {
+    /* 左右に30pxずつマージン取ってるので、半分にするために60px引く */
+    width: calc(50% - 60px);
   }
 }
