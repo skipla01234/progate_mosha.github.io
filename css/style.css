@@ -44,6 +44,10 @@ ul {
   font-size: 3.4rem;
 }
 
+.headline-md {
+  font-size: 2.8rem;
+}
+
 /* PCでの表示では2.8rem */
 .text-size-lg {
   font-size: 2.8rem;
@@ -366,6 +370,10 @@ ul {
     font-size: 2.4rem;
   }
 
+  .headline-md {
+    font-size: 2.0rem;
+  }
+
   /* スマホでの表示では2.4rem */
   .text-size-lg {
     font-size: 2.4rem;
@@ -472,6 +480,10 @@ ul {
   /* テキスト共通系 */
   .headline {
     font-size: calc(2.4rem + ((1vw - 0.56rem) * 2.5));
+  }
+
+  .headline-md {
+    font-size: calc(2rem + ((1vw - 0.56rem) * 2));
   }
 
   /* ヘッダー */
