@@ -319,12 +319,15 @@ ul {
 }
 
 /* 無料会員登録 */
+.start-programing {
+  padding: 100px 0;
+  text-align: center;
+}
+
 .register a {
   box-shadow: 0 0 15px 1px rgba(33, 47, 51, 0.3);
 }
-.register {
-  text-align: center;
-}
+
 
 /* スマホ用の表示 */
 @media screen and (max-width: 559px) {
