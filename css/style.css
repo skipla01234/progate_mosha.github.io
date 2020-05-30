@@ -451,6 +451,14 @@ ul {
   .cource-detail {
     width: calc(50% - 40px);
   }
+
+  .anywhere {
+    flex-direction: column;
+  }
+
+  .anywhere-text, .device-image {
+    width: 100%;
+  }
 }
 
 /* タブレット用の表示 */
