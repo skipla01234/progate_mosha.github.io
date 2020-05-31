@@ -4,6 +4,11 @@
 詳細は、 https://note.com/skipla で解説していますが、
 実際の完成形のコードをこちらで公開しています。
 
+## 見れるの？
+
+こちらのサイトで公開してます。
+https://skipla01234.github.io/progate_mosha.github.io/
+
 ## コピペして使ってよいの？
 
 OKです。
