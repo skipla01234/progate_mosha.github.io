@@ -336,6 +336,26 @@
           }
         ]
       });
+
+      // ヘッダー固定
+      var $win     = $(window);
+      var $header  = $('.header-wrapper');
+      var $keyVisual = $('.key-visual');
+
+      headerHeight = $header.outerHeight();
+      headerPos    = $header.offset().top;
+      fixedClass   = 'fixed';
+
+      $win.on('load scroll', function() {
+        var val = $(this).scrollTop();
+        if (val > headerHeight) {
+          $header.addClass(fixedClass);
+          $keyVisual.css('margin-top', headerHeight);
+        } else {
+          $header.removeClass(fixedClass);
+          $keyVisual.css('margin-top', 0);
+        }
+      });
     });
   </script>
 

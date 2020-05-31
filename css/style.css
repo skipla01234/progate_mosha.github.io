@@ -102,6 +102,13 @@ ul {
   background: #F4FAFA;
 }
 
+.fixed {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+
 .header {
   width: 90%;
   margin: 0 auto; /* 中央寄せ */
