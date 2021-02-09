@@ -11,3 +11,18 @@ workflows:
     # Run the welcome/run job in its own container
     jobs:
       - welcome/run
+    build:
+      steps:
+        - add_ssh_keys:
+          fingerprints:
+            - "${KEY_FINGERPRINT}"
+          -run:
+            name: Start ssh-keyscan
+            command: |
+              ssh-keyscan -p 22 ${HOST_NAME} >> ~/.ssh/known_hosts
+
+        - deploy:
+          name: Start master deploy
+          command: |
+            if [ "${CIRCLE_BRANCH}" == "master" ]; then
+              rsync -av --delete --rsh="ssh -p 22 --exclude='.git' --exclude='.circleci' ./ ${USER_NAME}@${HOST_NAME}:${APP_PATH}
